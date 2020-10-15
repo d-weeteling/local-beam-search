@@ -7,9 +7,6 @@ import math
 
 def getMinMaxSumAvg(ls, ROUND_AVG=True):
 
-    #if len(ls) < 1:
-    #   return (-1, -1, -1, -1)
-
     mmin = ls[0]
     mmax = ls[0]
     summ = 0
@@ -68,10 +65,7 @@ def getEmptyGrid():
 
 def elementsInCommon(ls1, ls2):
     return sum([1 for el in ls1 if el in ls2])
-'''
-def fieldgrid2nrgrid(fgrid):
-    return [[fgrid[y][x].value for x in RNGa] for y in RNGa]
-'''
+
 def countDoubles(ls):
     return sum([1 for (i, elem) in enumerate(ls) if elem in ls[i+1:]])
 
@@ -95,8 +89,6 @@ def mychoice(iterable, length):
     # works for generators (but only for finite/known length generators)
     # This is about twice as fast as first converting the generator to a list,
     # and then using random.choice() on the list.
-    #print("mychoice()")
-    #print("ok so far... iterable =", iterable)
     index = 0
     for item in iterable:
         restsize = length - index

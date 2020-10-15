@@ -50,8 +50,6 @@ def rows2nrgrid(rowarr):
 
 def buildGrid(presetgrid, RANDOM_ORDER=False):
 
-    #print "RANDOMIZE:", RANDOMIZE
-
     rs = nrgrid2rows(presetgrid)
 
     rsfilled = []
