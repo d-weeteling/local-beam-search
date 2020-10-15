@@ -1,8 +1,5 @@
 # local-beam-search
 
-Een algoritme voor het oplossen van sudoku puzzels
----
-
 ## Omschrijving
 
 Met deze code kunnen sudoku's worden opgelost, zowel 9x9 als 16x16 als 25x25 (<=langzaam).
